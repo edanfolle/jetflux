@@ -1,0 +1,34 @@
+[project]
+name = 'jetflux'
+version = '0.0.1-dev'  # todo: discover dynamically
+authors = [
+    {name='Edan', email='167399013+edanfolle@users.noreply.github.com'},
+]
+description = 'High performance webserver for Python'
+readme = 'README.md'
+license = {file="LICENSE"}
+requires-python = '>=3.7'
+keywords = ['one', 'two']
+classifiers = [
+    'Topic :: Internet :: WWW/HTTP :: HTTP Servers',
+    'Topic :: Internet :: WWW/HTTP :: WSGI :: Server',
+    'Programming Language :: Python :: 3',
+]
+dependencies = [
+#   'requests',
+#   'importlib-metadata; python_version<"3.10"',
+]
+
+[project.urls]
+'Homepage' = 'https://github.com/edanfolle/jetflux'
+'Bug Tracker' = 'https://github.com/edanfolle/jetflux/issues'
+'Documentation' = 'https://jetflux.readthedocs.io/'
+
+[build-system]
+requires = ['setuptools>=61.0.0']
+build-backend = 'setuptools.build_meta'
+
+[tool.setuptools]
+packages = ['jetflux']
+include-package-data = true
+package-dir = {'' = 'src'}
